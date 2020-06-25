@@ -1,0 +1,21 @@
+<%- include ('partials/_header') %>
+<article class="container-fluid">
+    <article class="row">
+        <article class="col-md-5 m-auto">
+            <article class="card">
+                <article class="card-body">
+                    <form action="/edit/<%= task._id %>" method="POST">
+                        <article class="form-group">
+                            <input type="text" name="title" placeholder="Insert a Title" class="form-cotrol" value="<%= task.title %>">
+                        </article>
+                        <article class="form-group">
+                            <textarea name="description" cols="80" class="form-control" placeholder="Insert a Description"><%= task.description %></textarea>
+                        </article>
+                        <button type="submit" class="btn btn-primary btn-block">Update</button>
+                    </form>
+                </article>
+            </article>
+        </article>
+    </article>
+</article>
+<%- include ('partials/_footer') %>
