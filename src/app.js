@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const app = express();
 
-// connecting to db
+// connecting to db(mongoDB)
 mongoose.connect('mongodb://localhost/crud-mongo', {
     useNewUrlParser: true, 
     useUnifiedTopology: true 
